@@ -1,6 +1,6 @@
 # Pencli
 It works purely in RAM. No SSD/HDD usage for maximum speed and privacy.
-## Linux / Windows in WSL
+## Installation : Linux / Windows in WSL 
 
 ### Prerequisites
 - `clang`
