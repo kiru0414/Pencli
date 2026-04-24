@@ -24,7 +24,7 @@ Edit memo.
 $ pencli
 ```
 
-Change nano editor.
+Change to nano editor.
 ```
 $ export EDITOR=nano
 ```
