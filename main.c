@@ -70,9 +70,19 @@ int main(int argc, char *argv[]) {
       print_memo();
       return 0;
     }
-    if(strcmp(argv[i],"--help")==0 || strcmp(argv[1],"-h")==0){
-	printf("helpを表示");
-	return 0;
+    if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
+        printf("Usage: pencli [OPTION] [TEXT]\n\n");
+        printf("Edit memo (opens $EDITOR):\n");
+        printf("  $ pencli\n\n");
+        printf("Change editor (example):\n");
+        printf("  $ export EDITOR=nano\n\n");
+        printf("Add memo:\n");
+        printf("  $ pencli -a \"add text\"\n\n");
+        printf("Print memo:\n");
+        printf("  $ pencli -p\n\n");
+        printf("Clear memo:\n");
+        printf("  $ pencli -c\n");
+        return 0;
     }
     if (strcmp(argv[i], "-c") == 0) {
         shm_unlink("/pencli_memo");
