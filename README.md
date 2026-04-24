@@ -1,5 +1,6 @@
 # Pencli
 It works purely in RAM. No SSD/HDD usage for maximum speed and privacy.
+[manual](https://github.com/kiru0414/Pencli/)
 ## Installation : Linux / Windows in WSL 
 
 ### Prerequisites
