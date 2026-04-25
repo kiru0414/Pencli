@@ -59,9 +59,7 @@ int main(int argc, char *argv[]) {
              "/_/     \\___//_/ /_/\\____/  /_/  /_/     ||\n"
              "                                         \\/\n"
              "                                         \'\n"
-             "version 1.0\n"
-             "commands\n"
-             "--help\n"
+             "pencli version 1.0\n"
              "\n");
       return 0;
     }
