@@ -61,14 +61,8 @@ int main(int argc, char *argv[]) {
              "                                         \'\n"
              "pencli version 1.0\n"
              "\n");
-      return 0;
     }
-
-    if (strcmp(argv[i], "-p") == 0) {
-      print_memo();
-      return 0;
-    }
-    if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
+	if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
         printf("Usage: pencli [OPTION] [TEXT]\n\n");
         printf("Edit memo (opens $EDITOR):\n");
         printf("  $ pencli\n\n");
@@ -80,8 +74,13 @@ int main(int argc, char *argv[]) {
         printf("  $ pencli -p\n\n");
         printf("Clear memo:\n");
         printf("  $ pencli -c\n");
-        return 0;
     }
+
+    if (strcmp(argv[i], "-p") == 0) {
+      print_memo();
+      return 0;
+    }
+
     if (strcmp(argv[i], "-c") == 0) {
         shm_unlink("/pencli_memo");
         printf("Memory cleared. (The lead has been broken.)\n");
