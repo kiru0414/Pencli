@@ -44,6 +44,7 @@ void print_memo() {
 }
 
 int main(int argc, char *argv[]) {
+  int handled = 0;
   //Open Editor
   if (argc == 1) {
     editor_open();
@@ -61,6 +62,7 @@ int main(int argc, char *argv[]) {
              "                                         \'\n"
              "pencli version 1.0\n"
              "\n");
+		handled = 1;
     }
 	if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
         printf("Usage: pencli [OPTION] [TEXT]\n\n");
@@ -74,6 +76,7 @@ int main(int argc, char *argv[]) {
         printf("  $ pencli -p\n\n");
         printf("Clear memo:\n");
         printf("  $ pencli -c\n");
+		handled = 1;
     }
 
     if (strcmp(argv[i], "-p") == 0) {
@@ -108,7 +111,8 @@ int main(int argc, char *argv[]) {
 	return 0;
      }
   }
-
+if(handled = 0){
   printf("%s: That flag doesn't exist!\n", argv[0]);
+}
   return 0;
 }
