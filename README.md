@@ -18,6 +18,7 @@ $ make install
 
 ## Manual
  You can use either `pc` or `pencli`.
+ You can use it just like taking notes with a pencil.
 
 Edit memo.
 ```
