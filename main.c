@@ -111,7 +111,7 @@ int main(int argc, char *argv[]) {
 	return 0;
      }
   }
-if(handled = 0){
+if(handled == 0){
   printf("%s: That flag doesn't exist!\n", argv[0]);
 }
   return 0;
