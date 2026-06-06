@@ -7,6 +7,7 @@ It works purely in RAM. No SSD/HDD usage for maximum speed and privacy.
 - `clang`
 - `make`
 - `sudo`
+- `git`
   
 ### Build and Install
 very easy.
